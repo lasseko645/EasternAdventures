@@ -19,7 +19,7 @@ public class Test {
 
         // for at se at der er en grund til at lave de værdier som jeg har lavet har jeg skabt to forskællige opjekter som gør brug af mine værdier
         Weapon hammer000001 = new Weapon("jernhammer", "en simpel hammer lavet af jern", 3, 0.0 , 14, WeaponKlasse.Heavy);
-        Weapon sværd000100 = new Weapon("jernsværd", "et simpelt swærd", 2, 5, 10, WeaponKlasse.Normal );
+        Weapon sværd000100 = new Weapon("jernsværd", "et simpelt swærd lavet af jern", 2, 5, 10, WeaponKlasse.Normal );
 
         // jeg laver også lige et par monstre
         Monster drage000001 = new Monster("adult drake", "et drage lignende øjle med rød skæl", 4, Gender.UKØNNET, 14, 7, 47, MonsterKlasse.normal);
@@ -27,11 +27,10 @@ public class Test {
 
         //jeg kan nu gøre brug af mine metoder
         hammer000001.getBeskrivelse();
-        hammer000001.strike();
+
 
         drage000001.getNavn();
-        drage000001.getNavn();
-        drage000001.getHp_life();
+
 
     }
 
