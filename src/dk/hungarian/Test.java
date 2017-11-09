@@ -2,6 +2,8 @@ package dk.hungarian;
 
 import dk.hungarian.genstande.weapon.Weapon;
 import dk.hungarian.genstande.weapon.WeaponKlasse;
+import dk.hungarian.skabninger.monster.Monster;
+import dk.hungarian.skabninger.monster.MonsterKlasse;
 
 public class Test {
 
@@ -19,8 +21,17 @@ public class Test {
         Weapon hammer000001 = new Weapon("jernhammer", "en simpel hammer lavet af jern", 3, 0.0 , 14, WeaponKlasse.Heavy);
         Weapon sværd000100 = new Weapon("jernsværd", "et simpelt swærd", 2, 5, 10, WeaponKlasse.Normal );
 
-        //jeg kan nu gøre brug af mine metoder
+        // jeg laver også lige et par monstre
+        Monster drage000001 = new Monster("adult drake", "et drage lignende øjle med rød skæl", 4, Gender.UKØNNET, 14, 7, 47, MonsterKlasse.normal);
+        Monster goblin000001 = new Monster("small goblin", "en lille forholdsvis harmløs goblin, med en kølle i hånden. ", 1, Gender.MAND, 4, 1, 5,MonsterKlasse.Small);
 
+        //jeg kan nu gøre brug af mine metoder
+        hammer000001.getBeskrivelse();
+        hammer000001.strike();
+
+        drage000001.getNavn();
+        drage000001.getNavn();
+        drage000001.getHp_life();
 
     }
 
